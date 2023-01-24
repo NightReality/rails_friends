@@ -1,0 +1,15 @@
+<section class="hero">
+  <div class="hero-body">
+    <p class="title">
+      <%= @friend.first_name %> <%= @friend.last_name %>
+    </p>
+    <p class="subtitle">
+      <p><%= @friend.email %></p>
+      <p><%= @friend.phone %></p>
+    </p>
+  </div>
+</section>
+
+
+<%= link_to 'Edit', edit_friend_path(@friend), class:"button is-primary" %>
+<%= link_to 'Back', friends_path, class:"button" %>
